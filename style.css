@@ -1,0 +1,414 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 5px;
+}
+
+.hero {
+    background: url('img/main.jpg') no-repeat center center/cover;
+    height: 100vh; /* Use full viewport height for a more prominent hero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px; /* Increase padding for more space around the text */
+    border-radius: 10px;
+    width: 60%; /* Adjust width to make the text block wider */
+    max-width: 800px; /* Limit the max width for responsiveness */
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3em; /* Increase font size of the heading */
+}
+
+.hero-text p {
+    font-size: 1.5em; /* Increase font size of the paragraph */
+}
+
+.hero-text .btn {
+    font-size: 1.2em; /* Slightly increase the size of the button text */
+    padding: 15px 25px; /* Increase button size */
+}
+
+
+.btn {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 40px;
+    text-align: center;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    width: 30%;
+}
+
+.feature-item i {
+    font-size: 40px;
+    color: #28a745;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+}
+
+form input[type="email"] {
+    padding: 5px;
+}
+
+form button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 250px; /* Adjust this as needed */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product-card img {
+    max-width: 150px; /* Limit the width */
+    max-height: 150px; /* Limit the height */
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+}
+
+.product-card .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-card .button:hover {
+    background-color: #0056b3;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff8c00; /* Orange background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin: 5px; /* Space between buttons */
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #ff6f00; /* Darker orange on hover */
+}
+
+/* Button Active Effects */
+button:active {
+    background-color: #ff4500; /* Even darker orange when clicked */
+    transform: scale(0.98); /* Slightly shrink the button */
+}
+
+
+.error {
+    color: red;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+/* General styles for the product detail page */
+.product-details {
+    display: flex;                   /* Use flexbox for layout */
+    align-items: flex-start;        /* Align items to the top */
+    margin: 20px;                   /* Add some margin */
+    background-color: #f9f9f9;      /* Light background color */
+    border-radius: 8px;             /* Rounded corners */
+    padding: 20px;                  /* Inner padding */
+    padding-left: 165px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Image styles */
+.product-details img {
+    width: 500px;                   /* Fixed width for the image */
+    height: auto;                   /* Maintain aspect ratio */
+    border-radius: 8px;             /* Rounded corners */
+    margin-right: 20px;             /* Space between image and text */
+}
+
+/* Info styles */
+.product-info {
+    flex-grow: 1;                   /* Take up remaining space */
+}
+
+.product-info h3 {
+    font-size: 24px;                /* Title font size */
+    margin: 0;                      /* Remove margin */
+    color: #333;                    /* Title color */
+}
+
+.product-price {
+    font-size: 20px;                /* Price font size */
+    color: #d9534f;                 /* Price color (Bootstrap danger) */
+    margin: 10px 0;                 /* Margin above and below */
+}
+
+.quantity-selector {
+    display: flex;                  /* Use flexbox for quantity controls */
+    align-items: center;           /* Center items vertically */
+}
+
+.quantity-button {
+    width: 30px;                    /* Set button width */
+    height: 30px;                   /* Set button height */
+    background-color: #e7e7e7;      /* Background color */
+    border: 1px solid #ccc;         /* Border style */
+    cursor: pointer;                /* Pointer cursor on hover */
+}
+
+.quantity-input {
+    width: 50px;                    /* Set input width */
+    text-align: center;             /* Center text */
+    margin: 0 10px;                 /* Margin on sides */
+}
+
+.add-to-cart, .buy-now {
+    margin-top: 10px;               /* Space above button */
+    padding: 10px 20px;             /* Button padding */
+    color: white;                   /* Text color */
+    border: none;                   /* No border */
+    cursor: pointer;                /* Pointer cursor on hover */
+}
+
+.add-to-cart {
+    background-color: #28a745;      /* Green button for Add to Cart */
+}
+
+.buy-now {
+    background-color: #dc3545;      /* Red button for Buy Now */
+    margin-left: 10px;               /* Space between buttons */
+}
+
+/* Cart Item Styling */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-details {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-details img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px; /* Optional for rounded corners */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.cart-item-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cart-item-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Quantity Controls */
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-quantity button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.cart-item-quantity button:hover {
+    background-color: #ccc;
+}
+
+/* Item Total */
+.cart-item-total {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Remove Item Button */
+.remove-item {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+.remove-item:hover {
+    color: #c0392b;
+}
+
+/* Order Summary */
+#order-summary {
+    margin-top: 30px;
+    text-align: right;
+}
+
+#order-summary p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#order-summary button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#order-summary button:hover {
+    background-color: #2ecc71;
+}
+
+
+/* Styles for contact.html page */
+.contact-main {
+    background-color: #f0f4f8; /* Light background for the main section */
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 750px; /* Control the width for a focused look */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.contact-main h2 {
+    font-size: 2.5em;
+    color: #2c3e50; /* Dark heading */
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+.contact-main form {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.contact-main input[type="text"], 
+.contact-main input[type="email"], 
+.contact-main textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.contact-main button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-main button:hover {
+    background-color: #2980b9;
+}
+
+.contact-main textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-main input:focus, 
+.contact-main textarea:focus {
+    outline: none;
+    border-color: #2980b9; /* Focus effect */
+}
